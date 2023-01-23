@@ -15,6 +15,7 @@ const renderJoke = (data, itemNumber) => {
   previousButton.style.display = "block";
   nextButton.style.display = "block";
   result.innerText = data.result[itemNumber].value;
+  result.style.color = "var(--blue-secondary)";
   totalResults.innerText = `Showing ${itemNumber + 1} from ${results.total}`;
 };
 
@@ -47,14 +48,19 @@ const getJokesByTextSearch = async (query) => {
       },
     });
     if (!response.ok) {
+      result.innerText =
+        "Unfortunatelly could not get data. Please, try with diffrent text.";
+      result.style.color = "var(--error)";
       throw new Error(`HTTP error: ${response.status}`);
     }
     const data = await response.json();
     results = data;
     renderJoke(results, itemNumber);
-
     return data;
   } catch (error) {
+    result.innerText =
+      "Unfortunatelly could not get data. Please, try with diffrent text.";
+    result.style.color = "var(--error)";
     throw new Error(`Could not get data: ${error}`);
   }
 };
