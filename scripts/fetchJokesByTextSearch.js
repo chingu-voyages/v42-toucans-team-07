@@ -14,9 +14,16 @@ let results = [];
 const renderJoke = (data, itemNumber) => {
   previousButton.style.display = "block";
   nextButton.style.display = "block";
-  result.innerText = data.result[itemNumber].value;
-  result.style.color = "var(--blue-secondary)";
-  totalResults.innerText = `Showing ${itemNumber + 1} from ${results.total}`;
+  if (data.result[itemNumber].categories[0] === "explicit") {
+    result.innerText =
+      "Unfortunatelly could not show this joke. Please, try another one.";
+    result.style.color = "var(--error)";
+  } else {
+    result.innerText = "";
+    result.innerText = data.result[itemNumber].value;
+    result.style.color = "var(--blue-secondary)";
+    totalResults.innerText = `Showing ${itemNumber + 1} from ${results.total}`;
+  }
 };
 
 nextButton.addEventListener("click", () => {
