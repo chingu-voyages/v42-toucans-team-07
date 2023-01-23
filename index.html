@@ -21,13 +21,20 @@
       <section id="text-search">
         <h2>Display a joke by entering a text</h2>
         <form class="text-search-form">
-          <input type="search" class="text-search-input" name="query" />
+          <input
+            type="search"
+            class="text-search-input"
+            name="query"
+            placeholder="Your text goes here ..."
+          />
           <button class="text-search-button" type="'submit">Search</button>
         </form>
-        <button class="previous-button" disabled>Prev</button>
-        <button class="next-button">Next</button>
-        <div class="text-search-results-total"></div>
         <div class="text-search-results"></div>
+        <div class="text-search-results-total"></div>
+        <div class="action-buttons">
+          <button class="previous-button" disabled>prev</button>
+          <button class="next-button">next</button>
+        </div>
       </section>
     </main>
   </body>

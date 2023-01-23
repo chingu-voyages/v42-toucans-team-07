@@ -12,6 +12,8 @@ let itemNumber = 0;
 let results = [];
 
 const renderJoke = (data, itemNumber) => {
+  previousButton.style.display = "block";
+  nextButton.style.display = "block";
   result.innerText = data.result[itemNumber].value;
   totalResults.innerText = `Showing ${itemNumber + 1} from ${results.total}`;
 };
@@ -58,6 +60,7 @@ const getJokesByTextSearch = async (query) => {
 };
 
 searchForm.addEventListener("submit", (event) => {
+  itemNumber = 0;
   const query = searchInput.value;
   getJokesByTextSearch(query);
   event.preventDefault();
