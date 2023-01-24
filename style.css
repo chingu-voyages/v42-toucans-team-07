@@ -1,17 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
-:root{
-    --font: 'Poppins', sans-serif;
-    --primary-color:#212529;
-    --secondary-color:#dee2e6;
-}
+@import url('https://fonts.googleapis.com/css2?family=Changa&display=swap');
 
 *{
     margin: 0;
     padding: 0;
+    justify-content: center;
+    overflow: hidden;
 }
 
 body{
+    justify-content: center;
+    align-content: center;
     position: relative;
     display: flex;
     font-family: var(--font);
@@ -22,8 +20,9 @@ body{
  
  /* Navbar container */
  .navbar {
-    position: relative;
-    justify-content: center;
+    width: 100%;
+    height: 70%;
+    position: absolute;
     align-items: center;
     padding: 10px 10px;
     overflow: hidden;
@@ -40,6 +39,7 @@ body{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    box-shadow: #505152;
   }
   
   /* The dropdown container */
@@ -52,15 +52,20 @@ body{
   
   /* Dropdown button */
   .dropdown .dropbtn {
+    font-family: 'Changa', sans-serif;
     font-size: 16px;
     border: none;
     outline: none;
     color: rgb(0, 0, 0);
     padding: 8px 10px;
     background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
+    margin: 0; 
   }
+
+  #navbar.active .dropdown .dropbtn{
+    color: rgb(221, 221, 221);
+    transition: all 0.3s ease;
+}
   
   /* Add a gray background color to navbar links on hover */
   .navbar a:hover, .dropdown:hover .dropbtn {
@@ -102,80 +107,60 @@ body{
 .navbar input[type=text]{
     left: 500px;
     float: right;
-    display: block;
+    display: flex;
     text-align: left;
-    margin: none;
     padding: 14px;
     font-size: 12px;
     border-radius: 10px;
     background-color: rgb(179, 179, 179);
 }
 
-.toggle{
-  position: relative;
+#darkMode{
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  font-size: x-large;
+  color: rgb(43, 43, 43);
+}
+
+#darkMode.active{
+  color: rgb(221, 221, 221);
+  transition: all 0.3s ease;
+}
+
+.moonBox{
   float: right;
-  left: 10px;
-  width: 50px;
-  height: 20px;
-  background: linear-gradient(to bottom, #969494, rgb(179, 179, 179));
-  border-radius: 220px;
-  border:1px solid #2d2d2d;
-  box-shadow: inset 0 8px 50px rgba(0,0,0,0.1),  inset 0 8px 8px rgba(0,0,0,0.1),  inset 0 -4px 4px rgba(0,0,0,0.1);
+  width: max-content;
+  height: max-content;
+  display: flex;
+  text-align: center;
+  padding-top: 10px;
+  padding-right: 10px;
 }
 
-.toggle .toggle-item{
-  left: 0;
-  width: 8px;
-  height: 8px;
-  background: linear-gradient(to bottom, rgb(66,66,66), rgb(49,47,47));
-  position: absolute;
-  border-radius: 220px;
-  margin-top: 5px;
-  margin-left: 6px;
-  box-shadow: inset 0 8px 50px rgba(0,0,0,0.1),
-  inset 0 8px 8px rgba(0,0,0,0.1),
-  inset 0 -4px 4px rgba(0,0,0,0.1);
+#loginBtn{
+  font-size: x-large;
   cursor: pointer;
-  transition: all 0.5s ease;
-  z-index: 1;
-  border-color: rgb(255, 255, 255);
-  align-items: center;
-  justify-content: center;
+  float: right;
+  width: 30px;
+  height: 30px;
+  color: rgb(43, 43, 43);
 }
 
-.context{
-  display: block;
-  position: absolute;
-  top: 35px;
-  left: 510px;
-  font-size: 14px;
-  color: #212529;
-  font-weight: 600;
-  margin-left: 40px;
-  transition: all 0.5s ease;
+#loginBtn.active{
+  color: rgb(221, 221, 221);
+  transition: all 0.3s ease;
 }
 
-
-.toggle .toggle-item.active{
-  left: 30px;
-  width: 8px;
-  height: 8px;
-  background: var(--secondary-color);
-  position: absolute;
-  margin-top: 5px;
-  margin-left: 6px;
-  cursor: pointer;
-  transition: all 0.5s ease;
+.login{
+  float: right;
+  height: max-content;
+  width: max-content;
+  padding: 10px;
 }
-
 
 body.active{
   background: rgb(61, 61, 61);
-  transition: all 0.5s ease;
-}
-body.active h2{
-  color: var(--primary-color);
-  margin-right: 80px;
   transition: all 0.5s ease;
 }
 
@@ -186,3 +171,63 @@ body.active .toggle{
     transition: all 0.5s ease;
 }
 
+.mainCtn{
+  display: flex;
+  text-align: center;
+  width: 100%;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.ctApi{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  border-style: groove;
+  border-color: rgb(0, 0, 0);
+  border-width: 5px;
+  border-radius: 20px;
+  width: 400px;
+  height: 200px;
+  background-color: antiquewhite;
+  top: 70px;
+}
+
+.photo{
+  position: relative;
+  width: 100%;
+  height: 38%;
+  background-color:  rgb(148, 148, 148);
+  border-style: groove;
+  border-color: rgb(0, 0, 0);
+  border-width: 5px;
+  top: 45px;
+}
+
+#blankImage
+
+.favFact{
+  cursor: pointer;
+  float: right;
+  background-color: #cac7c7;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
+  display:block;
+  width:35px;
+  height:35px;
+  text-align:center;
+  line-height:45px;
+  justify-content: center;
+}
+
+#heart{
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+
+#heart:hover{
+  font-size: 22px;
+  color: red;
+  transition: all 0.2s ease;
+}

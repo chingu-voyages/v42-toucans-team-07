@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/af561604b6.js" crossorigin="anonymous"></script>
     <title>Test</title>
 </head>
 <body>
     <!-- Navigation Bar -->
-    <div class="navbar"> 
+    <div class="navbar" id="navbar"> 
         <!-- The boxes that opens while hovering mouse -->
         <div class="dropdown">
-          <button class="dropbtn">About
+          <button id="dropDown" class="dropbtn">About
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
@@ -25,7 +26,7 @@
           </div>
         </div>
         <div class="dropdown">
-            <button class="dropbtn">Facts
+            <button id="dropDown" class="dropbtn">Facts
               <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
@@ -35,7 +36,7 @@
             </div>
           </div>
         <div class="dropdown">
-            <button class="dropbtn">Community
+            <button id="dropDown" class="dropbtn">Community
               <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
@@ -45,7 +46,7 @@
             </div>
           </div>
         <div class="dropdown">
-            <button class="dropbtn">External Sources
+            <button id="dropDown" class="dropbtn">External Sources
               <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
@@ -55,13 +56,31 @@
             </div>
           </div>
         <!-- Dark Mode Button -->
-          <div class="toggle">
-            <span class="toggle-item"></span>
-          </div>
-          <h2 class="context" id="context">Light Mode</h2>
-          <!-- Search Box -->
-          <input type="text" placeholder="&#128269;Search..">
+        <div class="moonBox">
+          <i id="darkMode" class="fa-solid fa-moon"></i> 
         </div>
+        <div class="login">  
+          <i id="loginBtn" class="fa-solid fa-right-to-bracket"></i>
+          </div>
+          <!-- Search Box -->
+          <input class="searchBox" type="text" placeholder="&#128269;Search..">
+      </div>
+    <!-- Main HomnPage Content -->
+    <div class="mainCtn">
+      <div class="photo">
+        <i id="blankImage" class="fa-regular fa-image"></i>
+      </div>
+      <!-- Api box -->
+      <div class="ctApi">
+        <!-- Save Favorite Fact -->
+        <div class="favFact" href="">
+        
+          <i id="heart" class="far fa-heart"></i>
+        </div>
+        <!-- container for generating api -->
+        <div class="dApi"></div>
+      </div>
+    </div>
       <script src="script.js"></script> 
 </body>
 </html>
