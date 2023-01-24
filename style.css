@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Changa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Playfair+Display&display=swap');
 
 *{
     margin: 0;
@@ -16,6 +18,7 @@ body{
     height: 100vh;
     margin: auto;
     background: white;
+    transition: all 0.5s ease;
 } 
  
  /* Navbar container */
@@ -29,6 +32,7 @@ body{
     background-color: transparent;
     font-family: Arial;
     padding: 10;
+    transition: all 0.5s ease;
   }
   
   /* Links inside the navbar */
@@ -40,6 +44,7 @@ body{
     padding: 14px 16px;
     text-decoration: none;
     box-shadow: #505152;
+    transition: all 0.5s ease;
   }
   
   /* The dropdown container */
@@ -48,6 +53,7 @@ body{
     overflow: hidden;
     border-radius: 10px;
     border-radius: 10px;
+    transition: all 0.5s ease;
 }
   
   /* Dropdown button */
@@ -60,6 +66,7 @@ body{
     padding: 8px 10px;
     background-color: inherit;
     margin: 0; 
+    transition: all 0.5s ease;
   }
 
   #navbar.active .dropdown .dropbtn{
@@ -70,6 +77,7 @@ body{
   /* Add a gray background color to navbar links on hover */
   .navbar a:hover, .dropdown:hover .dropbtn {
     background-color: rgb(179, 179, 179);
+    transition: all 0.5s ease;
   }
   
   /* Dropdown content (hidden by default) */
@@ -81,6 +89,7 @@ body{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 10px;
+    transition: all 0.5s ease;
 }
   
   /* Links inside the dropdown */
@@ -91,16 +100,19 @@ body{
     text-decoration: none;
     display: block;
     text-align: left;
+    transition: all 0.5s ease;
   }
   
   /* Add a grey background color to dropdown links on hover */
   .dropdown-content a:hover {
     background-color: #ddd;
+    transition: all 0.5s ease;
   }
   
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
     display: block;
+    transition: all 0.5s ease;
   } 
 
   /* Search bar*/
@@ -113,6 +125,7 @@ body{
     font-size: 12px;
     border-radius: 10px;
     background-color: rgb(179, 179, 179);
+    transition: all 0.5s ease;
 }
 
 #darkMode{
@@ -121,6 +134,7 @@ body{
   height: 30px;
   font-size: x-large;
   color: rgb(43, 43, 43);
+  transition: all 0.5s ease;
 }
 
 #darkMode.active{
@@ -136,6 +150,7 @@ body{
   text-align: center;
   padding-top: 10px;
   padding-right: 10px;
+  transition: all 0.5s ease;
 }
 
 #loginBtn{
@@ -145,6 +160,7 @@ body{
   width: 30px;
   height: 30px;
   color: rgb(43, 43, 43);
+  transition: all 0.5s ease;
 }
 
 #loginBtn.active{
@@ -157,6 +173,7 @@ body{
   height: max-content;
   width: max-content;
   padding: 10px;
+  transition: all 0.5s ease;
 }
 
 body.active{
@@ -178,12 +195,14 @@ body.active .toggle{
   flex-direction: column;
   justify-items: center;
   align-items: center;
+  transition: all 0.5s ease;
 }
 
 .ctApi{
   position: relative;
-  align-items: center;
-  justify-content: center;
+  display: flex;
+  text-align:center;
+  flex-direction: column;
   border-style: groove;
   border-color: rgb(0, 0, 0);
   border-width: 5px;
@@ -192,6 +211,7 @@ body.active .toggle{
   height: 200px;
   background-color: antiquewhite;
   top: 70px;
+  transition: all 0.5s ease;
 }
 
 .photo{
@@ -203,6 +223,7 @@ body.active .toggle{
   border-color: rgb(0, 0, 0);
   border-width: 5px;
   top: 45px;
+  transition: all 0.5s ease;
 }
 
 #blankImage
@@ -210,10 +231,10 @@ body.active .toggle{
 .favFact{
   cursor: pointer;
   float: right;
+  vertical-align: top;
   background-color: #cac7c7;
   border-radius: 20px;
   box-shadow: 0 2px 8px rgba(0,0,0,.1);
-  display:block;
   width:35px;
   height:35px;
   text-align:center;
@@ -224,10 +245,24 @@ body.active .toggle{
 #heart{
   font-size: 20px;
   color: rgb(0, 0, 0);
+  float: right;
+  padding-right: 10px;
+  padding-top: 5px;
+  vertical-align: top;
+  cursor: pointer;
 }
 
 #heart:hover{
   font-size: 22px;
   color: red;
   transition: all 0.2s ease;
+}
+
+.ctApi .quote{
+  color: rgb(0, 0, 0);
+  font-family: 'Handlee', cursive;
+}
+
+.quoteTitle{
+  font-family: 'Playfair Display', serif;
 }
