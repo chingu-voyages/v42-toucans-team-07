@@ -9,23 +9,28 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="./styles/style.css" />
-  <link rel="stylesheet" type="text/css" href="./styles/base.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
   <title>Test</title>
 </head>
 
-<body>
+<body style="background-image: url('cn.jpg'); background-size: 100%" background-size="cover">
+
+
   <main>
     <section class="container">
       <!--title-->
-      <div class="title">
-        <h2>Sign in</h2>
+      <div class="title-sign-in">
+        <div class="background">Sign in</div>
       </div>
       <section class="sign-in">
-        <input type="text" placeholder="Email">
-        <input type="text" placeholder="Password">
-        <button class="sign-in-btn"></button>
-        <p class="sign-in-text">Don't have an account? Sign up</p>
+        <input type="text" placeholder="Email" class="email">
+        <input type="text" placeholder="Password" class="password">
+        <button class="sign-in-btn">
+          <div class="text-height">Sign in</div>
+        </button>
       </section>
+      <p class="sign-in-text">Don't have an account? <b class="blue"><a href="">Sign up</b></p>
+
     </section>
   </main>
 </body>
