@@ -2,10 +2,10 @@
     position: absolute;
     box-sizing: content-box;
     width: 300px;
-    height: 500px;
+    height: 350px;
     left: calc(50% - 350px/2);
     bottom: 138px;
-    top: 200px;
+    top: 308px;
     background: rgba(50, 42, 42, 0.45);
     border-radius: 16px;
 }
@@ -15,22 +15,13 @@
     box-sizing: border-box;
     font-family: 'Inter';
     font-style: normal;
-    top: 30px;
-    font-weight: 600;
-    font-size: 55px;
+    top: 16px;
+    font-weight: 400;
+    font-size: 50px;
     line-height: 150%;
     text-align: center;
     letter-spacing: -0.01em;
-    color: #433D03;
-    ;
-}
-
-.background {
-    top: 30px;
-    font-weight: 700;
-    font-size: 60px;
-    line-height: 150%;
-    background-color: #E8C930;
+    color: #eae9e9;
 }
 
 .email {
@@ -43,41 +34,28 @@
     width: 250px;
     height: 30px;
     left: 12px;
-    top: 200px;
-    background: #FFFFFF;
+    top: 180px;
+    background: #ffffff;
     border-radius: 16px;
 }
 
-.password {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 10px;
-    gap: 10px;
-    position: absolute;
-    width: 250px;
-    height: 30px;
-    left: 12px;
-    top: 270px;
-    background: #FFFFFF;
-    border-radius: 16px;
-}
-
-.sign-in-btn {
+.btn {
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     align-items: center;
     text-align: center;
-    padding: 30px;
+    padding: 25px;
     gap: 10px;
     position: absolute;
-    width: 270px;
+    width: 260px;
     height: 50px;
-    left: 12px;
-    top: 400px;
+    left: 18px;
+    top: 270px;
     background: #5072ca;
     border-radius: 16px;
     justify-content: center;
+
 }
 
 .sign-in-text {
