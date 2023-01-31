@@ -1,7 +1,7 @@
-let signin = document.querySelector(".signIn");
+let btn = document.querySelector(".signUp");
 
 
-signin.addEventListener("click", function (event) {
+btn.addEventListener("click", function (event) {
     event.preventDefault();
-    window.location.href = "signin.html";
+    window.location.href = "signup.html";
 });
