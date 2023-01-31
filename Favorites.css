@@ -189,10 +189,40 @@ body.active .toggle{
 }
 
 .mainContent{
-    width: 100%;
-    height: 100%;
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 
-.favTxt{
-    font-family: 'Changa', sans-serif;
+.favTitle{
+  position: absolute;
+  top: 80px;
+  font-family: 'Changa', sans-serif;
+  align-items: center;
+  font-size:xx-large
+}
+
+.favTitle.active{
+  color: rgb(221, 221, 221);
+  transition: all 0.5s ease;
+}
+
+.list {
+  padding-left: 20px;
+  top: 170px;
+  width: 100%;
+  height: 70%;
+  position: relative;
+  font-family: 'Changa', sans-serif;
+  float: right;
+}
+
+.list.active{
+    color: rgb(221, 221, 221);
+    transition: all 0.5s ease;
+}
+
+.fa-solid{
+  font-size:x-small;
+  padding-right: 10px
 }
