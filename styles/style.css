@@ -12,6 +12,7 @@ main {
   width: 80%;
   margin: 0 auto;
   text-align: center;
+  cursor: pointer;
 }
 
 .text-search-results {
