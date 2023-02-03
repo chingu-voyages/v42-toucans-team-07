@@ -13,6 +13,7 @@ main {
   margin: 0 auto;
   text-align: center;
   cursor: pointer;
+  z-index: 10;
 }
 
 .text-search-results {
@@ -77,4 +78,99 @@ main {
 
 .text-search-form {
   width: 100%;
+}
+
+#about,
+#quick-facts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40vh;
+}
+
+@media (min-width: 600px) {
+  #about {
+    width: 70%;
+    line-height: 4rem;
+  }
+}
+
+#filmography,
+#gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+.filmography-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem auto;
+}
+
+@media (min-width: 600px) {
+  .filmography-images {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+#filmography img {
+  height: 300px;
+  width: 500px;
+  object-fit: cover;
+}
+
+@media (min-width: 600px) {
+  #filmography {
+    width: 70%;
+    line-height: 4rem;
+  }
+}
+
+section h2 {
+  color: var(--blue-primary);
+  margin-bottom: 2rem;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+}
+.gallery-photo {
+  height: 300px;
+  width: 300px;
+}
+@media (min-width: 600px) {
+  .gallery-photo {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+  }
+}
+
+.gallery-photo img {
+  height: 300px;
+  width: 300px;
+  object-fit: contain;
+}
+
+@media (min-width: 600px) {
+  .gallery-photo img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+  }
+}
+@media (min-width: 600px) {
+  .gallery {
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
 }
