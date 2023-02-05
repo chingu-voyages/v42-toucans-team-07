@@ -1,143 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/base.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="homePage.css" />
-    <script
-      src="https://kit.fontawesome.com/af561604b6.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      async
-      type="text/javascript"
-      src="./scripts/fetchJokesByTextSearch.js"
-    ></script>
+    <script src="https://kit.fontawesome.com/af561604b6.js" crossorigin="anonymous"></script>
     <title>ChuckFact</title>
-    <link rel="icon" href="/media/logo.jpg" />
-  </head>
-  <body>
-    <hedaer>
-      <!-- Navigation Bar -->
-      <div class="navbar" id="navbar">
+    <link rel="icon" href="/media/logo.jpg">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar" id="navbar"> 
         <!-- The boxes that opens while hovering mouse -->
         <div class="dropdown">
-          <button id="dropDown" class="dropbtn">
-            About
+          <button id="dropDown" class="dropbtn">About
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <a href="#">Early Life</a>
+            <a href="homePage.html">HomePage</a>
             <a href="#">Career</a>
-            <a href="#"
-              >Martial Arts <br />
-              knowledge</a
-            >
-            <a href="#"
-              >Distrinctions, <br />
-              awards and honors</a
-            >
+            <a href="#">Martial Arts <br> knowledge</a>
+            <a href="#">Distrinctions, <br> awards and honors</a>
             <a href="#">Personal life</a>
             <a href="#">Filmography</a>
           </div>
         </div>
         <div class="dropdown">
-          <button id="dropDown" class="dropbtn">
-            Facts
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="#"
-              >Display a fact <br />
-              randomly</a
-            >
-            <a href="#text-search"
-              >Display a fact <br />
-              by entering a text</a
-            >
-            <a href="#"
-              >Display a fact <br />
-              of a specific category</a
-            >
+            <button id="dropDown" class="dropbtn">Facts
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Display a fact <br> randomly</a>
+              <a href="#">Display a fact <br> by entering a text</a>
+              <a href="#">Display a fact <br> of a specific category</a>
+              <a href="Favorites.html">Favorite Facts</a>
+            </div>
           </div>
-        </div>
         <div class="dropdown">
-          <button id="dropDown" class="dropbtn">
-            Community
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <button id="dropDown" class="dropbtn">Community 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
           </div>
-        </div>
         <div class="dropdown">
-          <button id="dropDown" class="dropbtn">
-            External Sources
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <button id="dropDown" class="dropbtn">External Sources
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
           </div>
-        </div>
         <!-- Dark Mode Button -->
         <div class="moonBox">
-          <i id="darkMode" class="fa-solid fa-moon"></i>
+          <i id="darkMode" class="fa-solid fa-moon"></i> 
         </div>
-        <div class="login">
+        <div class="login">  
           <i id="loginBtn" class="fa-solid fa-right-to-bracket"></i>
-        </div>
-        <!-- Search Box -->
-        <input class="searchBox" type="text" placeholder="&#128269;Search.." />
+          </div>
+          <!-- Search Box -->
+          <input class="searchBox" type="text" placeholder="&#128269;Search..">
       </div>
-    </hedaer>
-
     <!-- Main HomnPage Content -->
-    <main class="mainCtn">
-      <section id="home">
-        <div class="photo">
-          <i id="blankImage" class="fa-regular fa-image"></i>
-        </div>
-        <!-- Api box -->
-        <div class="ctApi">
-          <p id="quoteTitle">Quote of the day</p>
+    <div class="mainCtn">
+      <div class="photo">
+      </div>
+      <!-- Api box -->
+      <div class="ctApi">
+        <p id="quoteTitle">Quote of the day</p>
           <!-- Save Favorite Fact -->
           <div class="favFact" href="">
             <i id="heart" class="far fa-heart"></i>
           </div>
           <!-- container for generating api -->
           <p id="quote" class="quote">Test</p>
-        </div>
-      </section>
-
-      <section id="text-search">
-        <h2>Display a joke by entering a text</h2>
-        <form class="text-search-form">
-          <input
-            type="search"
-            class="text-search-input"
-            name="query"
-            placeholder="Your text goes here ..."
-            required
-            aria-required="true"
-            minlength="3"
-          />
-          <button class="text-search-button" type="'submit">Search</button>
-        </form>
-        <div class="text-search-results"></div>
-        <div class="text-search-results-total"></div>
-        <div class="action-buttons">
-          <button class="previous-button" disabled>prev</button>
-          <button class="next-button">next</button>
-        </div>
-      </section>
-    </main>
-    <script src="homePage.js"></script>
-  </body>
+      </div>
+    </div>
+      <script src="homePage.js"></script> 
+</body>
 </html>
