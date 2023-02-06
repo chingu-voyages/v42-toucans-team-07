@@ -1,77 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/base.css" />
     <link rel="stylesheet" href="homePage.css" />
-    <script src="https://kit.fontawesome.com/af561604b6.js" crossorigin="anonymous"></script>
+    <script
+      async
+      type="text/javascript"
+      src="./scripts/fetchJokesByTextSearch.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/af561604b6.js"
+      crossorigin="anonymous"
+    ></script>
     <title>ChuckFact</title>
-    <link rel="icon" href="/media/logo.jpg">
-</head>
-<body>
+    <link rel="icon" href="/media/logo.jpg" />
+  </head>
+  <body>
     <!-- Navigation Bar -->
-    <div class="navbar" id="navbar"> 
-        <!-- The boxes that opens while hovering mouse -->
-        <div class="dropdown">
-          <button id="dropDown" class="dropbtn">About
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="#about">Who is Chuck Norris?</a>
-            <a href="#quick-facts">Quick Facts</a>
-            <a href="#filmography">Filmography</a>
-            <a href="#gallery">Gallery</a>
-          </div>
+    <div class="navbar" id="navbar">
+      <!-- The boxes that opens while hovering mouse -->
+      <div class="dropdown">
+        <button id="dropDown" class="dropbtn">
+          About
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#about">Who is Chuck Norris?</a>
+          <a href="#quick-facts">Quick Facts</a>
+          <a href="#filmography">Filmography</a>
+          <a href="#gallery">Gallery</a>
         </div>
-        <div class="dropdown">
-            <button id="dropDown" class="dropbtn">Facts
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="#">Display a fact <br> randomly</a>
-              <a href="#">Display a fact <br> by entering a text</a>
-              <a href="#">Display a fact <br> of a specific category</a>
-              <a href="Favorites.html">Favorite Facts</a>
-            </div>
-          </div>
-        <div class="dropdown">
-            <button id="dropDown" class="dropbtn">Community 
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-          </div>
-        <div class="dropdown">
-            <button id="dropDown" class="dropbtn">External Sources
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-          </div>
-        <!-- Dark Mode Button -->
-        <div class="moonBox">
-          <i id="darkMode" class="fa-solid fa-moon"></i> 
-        </div>
-        <div class="login">  
-          <i id="loginBtn" class="fa-solid fa-right-to-bracket"></i>
-          </div>
-          <!-- Search Box -->
-          <input class="searchBox" type="text" placeholder="&#128269;Search..">
       </div>
+      <div class="dropdown">
+        <button id="dropDown" class="dropbtn">
+          Facts
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#"
+            >Display a fact <br />
+            randomly</a
+          >
+          <a href="#text-search"
+            >Display a fact <br />
+            by entering a text</a
+          >
+          <a href="#"
+            >Display a fact <br />
+            of a specific category</a
+          >
+          <a href="Favorites.html">Favorite Facts</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button id="dropDown" class="dropbtn">
+          Community
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button id="dropDown" class="dropbtn">
+          External Sources
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <!-- Dark Mode Button -->
+      <div class="moonBox">
+        <i id="darkMode" class="fa-solid fa-moon"></i>
+      </div>
+      <div class="login">
+        <i id="loginBtn" class="fa-solid fa-right-to-bracket"></i>
+      </div>
+      <!-- Search Box -->
+      <input class="searchBox" type="text" placeholder="&#128269;Search.." />
+    </div>
     <!-- Main HomnPage Content -->
-    <div class="mainCtn">
-      <div class="photo">
-      </div>
-      <!-- Api box -->
-      <div class="ctApi">
-        <p id="quoteTitle">Quote of the day</p>
+    <main class="mainCtn">
+      <section id="home">
+        <!--<div class="photo"></div>-->
+        <!-- Api box -->
+        <div class="ctApi">
+          <p id="quoteTitle">Quote of the day</p>
           <!-- Save Favorite Fact -->
           <div class="favFact" href="">
             <i id="heart" class="far fa-heart"></i>
@@ -117,23 +140,25 @@
         <h2>Quick Facts</h2>
         <ul>
           <li>
-            Born: 10 March 1940 (age 82 years), Ryan, Oklahoma, United States
+            <span>Born:</span> 10 March 1940 (age 82 years), Ryan, Oklahoma,
+            United States
           </li>
           <li>
-            Spouse: Gena O'Kelley (m. 1998), Dianne Holechek (m. 1958–1988)
+            <span>Spouse:</span> Gena O'Kelley (m. 1998), Dianne Holechek (m.
+            1958–1988)
           </li>
           <li>
-            Children: Mike Norris, Dakota Alan Norris, Danilee Kelly Norris,
-            Dina Norris, Eric Norris
+            <span>Children: </span>Mike Norris, Dakota Alan Norris, Danilee
+            Kelly Norris, Dina Norris, Eric Norris
           </li>
-          <li>Height: 1.78 m</li>
+          <li><span>Height:</span> 1.78 m</li>
           <li>
-            Grandchildren: Greta Norris, Camrynn Norris, Max Norris, Chantz
-            Norris, Hannah Norris, Chloe Norris
+            <span>Grandchildren: </span>Greta Norris, Camrynn Norris, Max
+            Norris, Chantz Norris, Hannah Norris, Chloe Norris
           </li>
           <li>
-            Martial arts: Karate, Taekwondo, Brazilian jiu-jitsu, Judo, Chun Kuk
-            Do, Tang Soo Do
+            <span>Martial arts:</span> Karate, Taekwondo, Brazilian jiu-jitsu,
+            Judo, Chun Kuk Do, Tang Soo Do
           </li>
         </ul>
       </section>
