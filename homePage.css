@@ -1,134 +1,143 @@
-@import url('https://fonts.googleapis.com/css2?family=Changa&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Playfair+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Changa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Playfair+Display&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    overflow: hidden;
+* {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
 }
 
-body{
-    justify-content: center;
-    align-content: center;
-    position: relative;
-    display: flex;
-    font-family: var(--font);
-    height: 100vh;
-    margin: auto;
-    background: white;
-    transition: all 0.5s ease;
-} 
- 
- /* Navbar container */
- .navbar {
-    width: 100%;
-    height: 70%;
-    position: absolute;
-    align-items: center;
-    padding: 10px 10px;
-    overflow: hidden;
-    background-color: transparent;
-    font-family: Arial;
-    padding: 10;
-    transition: all 0.5s ease;
-  }
-  
-  /* Links inside the navbar */
-  .navbar a {
-    float: left;
-    font-size: 16px;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    box-shadow: #505152;
-    transition: all 0.5s ease;
-  }
-  
-  /* The dropdown container */
-  .dropdown {
-    float: left;
-    overflow: hidden;
-    border-radius: 10px;
-    border-radius: 10px;
-    transition: all 0.5s ease;
-}
-  
-  /* Dropdown button */
-  .dropdown .dropbtn {
-    font-family: 'Changa', sans-serif;
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: rgb(0, 0, 0);
-    padding: 8px 10px;
-    background-color: inherit;
-    margin: 0; 
-    transition: all 0.5s ease;
-  }
-
-  #navbar.active .dropdown .dropbtn{
-    color: rgb(221, 221, 221);
-    transition: all 0.3s ease;
-}
-  
-  /* Add a gray background color to navbar links on hover */
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: rgb(179, 179, 179);
-    transition: all 0.5s ease;
-  }
-  
-  /* Dropdown content (hidden by default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: rgb(179, 179, 179);
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    border-radius: 10px;
-    transition: all 0.5s ease;
-}
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    transition: all 0.5s ease;
-  }
-  
-  /* Add a grey background color to dropdown links on hover */
-  .dropdown-content a:hover {
-    background-color: #ddd;
-    transition: all 0.5s ease;
-  }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-    transition: all 0.5s ease;
-  } 
-
-  /* Search bar*/
-.navbar input[type=text]{
-    left: 500px;
-    float: right;
-    display: flex;
-    text-align: left;
-    padding: 14px;
-    font-size: 12px;
-    border-radius: 10px;
-    background-color: rgb(179, 179, 179);
-    transition: all 0.5s ease;
+body {
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  display: flex;
+  font-family: var(--font);
+  height: 100vh;
+  margin: auto;
+  background: white;
+  transition: all 0.5s ease;
 }
 
-#darkMode{
+section {
+  width: 100%;
+  min-height: 50vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* Navbar container */
+.navbar {
+  width: 100%;
+  height: 40%;
+  position: fixed;
+  align-items: center;
+  padding: 10px 10px;
+  overflow: hidden;
+  background-color: transparent;
+  font-family: Arial;
+  padding: 10;
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  box-shadow: #505152;
+  transition: all 0.5s ease;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  border-radius: 10px;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-family: "Changa", sans-serif;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: rgb(0, 0, 0);
+  padding: 8px 10px;
+  background-color: inherit;
+  margin: 0;
+  transition: all 0.5s ease;
+}
+
+#navbar.active .dropdown .dropbtn {
+  color: rgb(221, 221, 221);
+  transition: all 0.3s ease;
+}
+
+/* Add a gray background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(179, 179, 179);
+  transition: all 0.5s ease;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(179, 179, 179);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  transition: all 0.5s ease;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+  transition: all 0.5s ease;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  transition: all 0.5s ease;
+}
+
+/* Search bar*/
+.navbar input[type="text"] {
+  left: 500px;
+  float: right;
+  display: flex;
+  text-align: left;
+  padding: 14px;
+  font-size: 12px;
+  border-radius: 10px;
+  background-color: rgb(179, 179, 179);
+  transition: all 0.5s ease;
+}
+
+#darkMode {
   cursor: pointer;
   width: 30px;
   height: 30px;
@@ -137,12 +146,12 @@ body{
   transition: all 0.5s ease;
 }
 
-#darkMode.active{
+#darkMode.active {
   color: rgb(221, 221, 221);
   transition: all 0.3s ease;
 }
 
-.moonBox{
+.moonBox {
   float: right;
   width: max-content;
   height: max-content;
@@ -153,7 +162,7 @@ body{
   transition: all 0.5s ease;
 }
 
-#loginBtn{
+#loginBtn {
   font-size: x-large;
   cursor: pointer;
   float: right;
@@ -163,12 +172,12 @@ body{
   transition: all 0.5s ease;
 }
 
-#loginBtn.active{
+#loginBtn.active {
   color: rgb(221, 221, 221);
   transition: all 0.3s ease;
 }
 
-.login{
+.login {
   float: right;
   height: max-content;
   width: max-content;
@@ -176,32 +185,32 @@ body{
   transition: all 0.5s ease;
 }
 
-body.active{
+body.active {
   background: rgb(61, 61, 61);
   transition: all 0.5s ease;
 }
 
-body.active .toggle{
-    position: relative;
-    width: 50px;
-    height: 20px;
-    transition: all 0.5s ease;
+body.active .toggle {
+  position: relative;
+  width: 50px;
+  height: 20px;
+  transition: all 0.5s ease;
 }
 
-.mainCtn{
+#home {
   display: flex;
   text-align: center;
   width: 100%;
+  min-height: 100vh;
   flex-direction: column;
   justify-items: center;
   align-items: center;
   transition: all 0.5s ease;
 }
 
-.ctApi{
-  position: relative;
+.ctApi {
   display: flex;
-  text-align:center;
+  text-align: center;
   flex-direction: column;
   border-style: groove;
   border-color: rgb(0, 0, 0);
@@ -210,17 +219,16 @@ body.active .toggle{
   width: 400px;
   height: 200px;
   background-color: antiquewhite;
-  top: 70px;
   transition: all 0.5s ease;
 }
 
-.photo{
-  background-image:url("media/chuck_norris_by_jonaharuken_d2axy1h.png");
-  background-size:auto;
+.photo {
+  background-image: url("media/chuck_norris_by_jonaharuken_d2axy1h.png");
+  background-size: auto;
   position: relative;
   width: 100%;
   height: 38%;
-  background-color:  rgb(148, 148, 148);
+  background-color: rgb(148, 148, 148);
   border-style: groove;
   border-color: rgb(0, 0, 0);
   border-width: 5px;
@@ -228,23 +236,21 @@ body.active .toggle{
   transition: all 0.5s ease;
 }
 
-#blankImage
-
-.favFact{
+#blankImage .favFact {
   cursor: pointer;
   float: right;
   vertical-align: top;
   background-color: #cac7c7;
   border-radius: 20px;
-  box-shadow: 0 2px 8px rgba(0,0,0,.1);
-  width:35px;
-  height:35px;
-  text-align:center;
-  line-height:45px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 45px;
   justify-content: center;
 }
 
-#heart{
+#heart {
   font-size: 20px;
   color: rgb(0, 0, 0);
   float: right;
@@ -254,19 +260,17 @@ body.active .toggle{
   cursor: pointer;
 }
 
-#heart:hover{
+#heart:hover {
   font-size: 22px;
   color: red;
   transition: all 0.2s ease;
 }
 
-.ctApi .quote{
+.ctApi .quote {
   color: rgb(0, 0, 0);
-  font-family: 'Handlee', cursive;
+  font-family: "Handlee", cursive;
 }
 
-.quoteTitle{
-  font-family: 'Playfair Display', serif;
+.quoteTitle {
+  font-family: "Playfair Display", serif;
 }
-
-
