@@ -1,14 +1,35 @@
-# voyage-tasks
+<div align="center">
+<img src="https://media.giphy.com/media/BIuuwHRNKs15C/giphy.gif" width='300'>
+</div>
 
-Your project's `readme` is as important to success as your code. For 
-this reason you should put as much care into its creation and maintenance
-as you would any other component of the application.
+<div align="center" >
 
-If you are unsure of what should go into the `readme` let this article,
-written by an experienced Chingu, be your starting point - 
-[Keys to a well written README](https://tinyurl.com/yk3wubft).
+## Chuck Norris Quotes
 
-And before we go there's "one more thing"! Once you decide what to include
-in your `readme` feel free to replace the text we've provided here.
+## This app was created for the Chingu Voyage 42!
 
-> Own it & Make it your Own!
+</div>
+<div></div>
+
+## ⚡ Overview
+
+The App shows funny Chuck Norris qoute of the day. You can search for quotes by entering text and read some information about Chuck Norris.
+
+## ⚡Live
+
+[Have a look on our app!](https://chingu-voyages.github.io/v42-toucans-team-07/homePage.html)
+
+## ⚡ Features
+
+- The Quote of the day
+- Search quotes by entering text
+- Sign in / Sign up Forms
+- Light / Dark mode
+
+## ⚡Contributors
+
+- [Corina](https://github.com/CorinaRx)
+
+- [Petre](https://github.com/Petre4488)
+
+- [Hanna](https://github.com/hannakozak)
