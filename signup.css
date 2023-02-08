@@ -1,118 +1,114 @@
 .container {
-    position: absolute;
-    box-sizing: content-box;
-    width: 300px;
-    height: 500px;
-    left: calc(50% - 350px/2);
-    bottom: 138px;
-    top: 200px;
-    background: rgba(50, 42, 42, 0.45);
-    border-radius: 16px;
+  position: absolute;
+  box-sizing: content-box;
+  width: 300px;
+  height: 500px;
+  left: calc(50% - 350px / 2);
+  bottom: 138px;
+  top: 200px;
+  background: rgba(50, 42, 42, 0.45);
+  border-radius: 16px;
 }
 
 .title-sign-in {
-    position: relative;
-    box-sizing: border-box;
-    font-family: 'Inter';
-    font-style: normal;
-    top: 30px;
-    font-weight: 600;
-    font-size: 55px;
-    line-height: 150%;
-    text-align: center;
-    letter-spacing: -0.01em;
-    color: #d5d5d5;
+  position: relative;
+  box-sizing: border-box;
+  font-family: "Inter";
+  font-style: normal;
+  top: 30px;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #d5d5d5;
 }
 
-
-
 .name {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 10px;
-    gap: 10px;
-    position: absolute;
-    width: 250px;
-    height: 30px;
-    left: 12px;
-    top: 130px;
-    background: #FFFFFF;
-    border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 10px;
+  position: absolute;
+  width: 250px;
+  height: 30px;
+  left: 12px;
+  top: 130px;
+  background: #ffffff;
+  border-radius: 16px;
 }
 
 .email {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 10px;
-    gap: 10px;
-    position: absolute;
-    width: 250px;
-    height: 30px;
-    left: 12px;
-    top: 200px;
-    background: #ffffff;
-    border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 10px;
+  position: absolute;
+  width: 250px;
+  height: 30px;
+  left: 12px;
+  top: 200px;
+  background: #ffffff;
+  border-radius: 16px;
 }
 
 .password {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 10px;
-    gap: 10px;
-    position: absolute;
-    width: 250px;
-    height: 30px;
-    left: 12px;
-    top: 270px;
-    background: #FFFFFF;
-    border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 10px;
+  position: absolute;
+  width: 250px;
+  height: 30px;
+  left: 12px;
+  top: 270px;
+  background: #ffffff;
+  border-radius: 16px;
 }
 
 .sign-up-btn {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    padding: 30px;
-    gap: 10px;
-    position: absolute;
-    width: 270px;
-    height: 50px;
-    left: 12px;
-    top: 400px;
-    background: #5072ca;
-    border-color: #5072ca;
-    border-radius: 16px;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  gap: 10px;
+  position: absolute;
+  width: 270px;
+  height: 50px;
+  left: 12px;
+  top: 400px;
+  background: #5072ca;
+  border-color: #5072ca;
+  border-radius: 16px;
+  justify-content: center;
 }
 
 .sign-up-btn:hover {
-    background-color: #2453c8;
-    color: white;
+  background-color: #2453c8;
+  color: white;
 }
 
 .sign-in-text {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 15px;
-    gap: 10px;
-    position: absolute;
-    left: 30px;
-    top: 450px;
-    color: #d3ddef;
-    font-weight: 100;
-    font-size: 16px;
-    justify-content: center;
-
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px;
+  gap: 10px;
+  position: absolute;
+  left: 30px;
+  top: 450px;
+  color: #d3ddef;
+  font-weight: 100;
+  font-size: 16px;
+  justify-content: center;
 }
 
 .text-height {
-    color: #ffffff;
-    font-weight: 100;
-    font-size: 25px;
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 25px;
 }

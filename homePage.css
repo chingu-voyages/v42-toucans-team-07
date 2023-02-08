@@ -177,12 +177,8 @@ section {
   transition: all 0.3s ease;
 }
 
-.login {
-  float: right;
-  height: max-content;
-  width: max-content;
-  padding: 10px;
-  transition: all 0.5s ease;
+a#loginBtn.login:hover {
+  background-color: transparent;
 }
 
 body.active {
