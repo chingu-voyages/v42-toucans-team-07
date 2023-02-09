@@ -29,10 +29,14 @@ section {
   justify-content: center;
   align-items: center;
 }
+.active {
+  color: white;
+  transition: all 0.3s ease;
+}
 /* Navbar container */
 .navbar {
   width: 100%;
-  height: 40%;
+  height: 60%;
   position: fixed;
   align-items: center;
   padding: 10px 10px;
@@ -42,6 +46,13 @@ section {
   padding: 10;
   transition: all 0.5s ease;
   z-index: 1;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  background-color: white;
 }
 
 /* Links inside the navbar */
@@ -204,6 +215,10 @@ body.active .toggle {
   transition: all 0.5s ease;
 }
 
+#home.active p {
+  color: black;
+}
+
 .ctApi {
   display: flex;
   text-align: center;
@@ -212,7 +227,8 @@ body.active .toggle {
   border-color: rgb(0, 0, 0);
   border-width: 5px;
   border-radius: 20px;
-  width: 400px;
+  max-width: 400px;
+  margin: 0 2rem;
   height: 200px;
   background-color: antiquewhite;
   transition: all 0.5s ease;

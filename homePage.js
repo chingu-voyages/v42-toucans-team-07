@@ -1,14 +1,16 @@
-const toggle = document.querySelector("#darkMode"),
-  body = document.querySelector("header"),
-  context = document.getElementById("context");
-authBtn = document.getElementById("loginBtn");
-dropDown = document.getElementById("navbar");
+const toggle = document.querySelector("#darkMode");
+const body = document.querySelector("body");
+const context = document.getElementById("context");
+const authBtn = document.getElementById("loginBtn");
+const dropDown = document.getElementById("navbar");
+const section = document.querySelector("section");
 
 toggle.addEventListener("click", function () {
   this.classList.toggle("active");
   body.classList.toggle("active");
   authBtn.classList.toggle("active");
   dropDown.classList.toggle("active");
+  section.classList.toggle("active");
 
   // function to change content from light -- dark
 

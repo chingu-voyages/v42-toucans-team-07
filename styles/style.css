@@ -19,6 +19,13 @@ main {
 .text-search-results {
   min-height: 10rem;
 }
+.active p {
+  color: white;
+}
+
+.active a {
+  color: var(--blue-primary);
+}
 
 @media (min-width: 600px) {
   .text-search-results {
@@ -86,8 +93,13 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  width: 80%;
 }
+
+#about {
+  text-align: center;
+}
+
 #quick-facts span {
   color: var(--blue-primary);
   font-weight: bold;
@@ -109,6 +121,7 @@ main {
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
+  width: 90%;
 }
 .filmography-images {
   display: flex;

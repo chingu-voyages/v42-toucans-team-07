@@ -21,7 +21,6 @@ const renderJoke = (data, itemNumber) => {
   } else {
     result.innerText = "";
     result.innerText = data.result[itemNumber].value;
-    result.style.color = "var(--blue-secondary)";
     totalResults.innerText = `Showing ${itemNumber + 1} from ${results.total}`;
   }
 };
